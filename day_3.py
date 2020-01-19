@@ -33,9 +33,15 @@ def main():
     lines2 = get_lines(get_points(test_path2))
     for line in lines:
         for line2 in lines2:
-            if line[0][0] != line[1][0] and line2[0][1] != line2[1][1]:
-                if line[0][0]
-            if line[1][0] != line[1][1]:
-
             print(line,line2)
+            if line[0][0] != line[1][0] and line2[0][1] != line2[1][1]:
+                print("wat")
+                if line[0][0] > line2[0][0] and line2[0][0] > line[0][1] and line2[0][1] > line[0][1] and line[0][1] > line2[1][1]:
+                    print("intersection")
+            elif line2[0][0] != line2[1][0] and line[0][1] != line[1][1]:
+                line, line2 = line2, line
+                print("fuk")
+                print("intersection")
         print()
+
+main()
