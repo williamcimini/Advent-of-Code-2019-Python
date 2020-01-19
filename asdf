@@ -1,0 +1,7 @@
+def sort_points(points):
+    if points[0][0] != points[1][0]:
+        if points[1][0] > points[0][0]:
+            return [points[1],points[0]]
+    else:
+        if points[1][1] > points[0][1]:
+            return [points[1],points[0]]
